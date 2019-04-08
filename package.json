@@ -1,0 +1,17 @@
+{
+  "name": "brain-games",
+  "version": "0.0.1",
+  "description": "first project on the Hexlet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "brain_games": "^2.0.2"
+  },
+  "bin": {
+    "brain-games": "src/bin/brain-games.js"
+  }
+}
