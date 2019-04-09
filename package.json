@@ -1,6 +1,6 @@
 {
   "name": "htwr-brain-games",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "first project on the Hexlet",
   "main": "index.js",
   "scripts": {
@@ -14,11 +14,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "brain_games": "^2.0.2"
+    "brain_games": "^2.0.2",
+    "readline-sync": "^1.4.9"
   },
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
-   },
+  },
   "devDependencies": {
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
