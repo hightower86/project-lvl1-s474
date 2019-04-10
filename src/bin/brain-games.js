@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import {askQuestion} from '..';
+import askQuestion from '..';
 
 askQuestion();
