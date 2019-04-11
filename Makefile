@@ -1,7 +1,7 @@
 install:
-	npm install
+	sudo npm install -g htwr-brain-games
 start:
-	npx babel-node src/bin/brain-games.js
+	npx babel-node src/bin/even-brain.js
 publish:
 	npm publish
 lint:

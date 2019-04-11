@@ -1,6 +1,6 @@
 {
   "name": "htwr-brain-games",
-  "version": "0.0.3",
+  "version": "1.0.4",
   "description": "first project on the Hexlet",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,8 @@
   },
   "keywords": [
     "brain",
-    "games"
+    "games",
+    "even-brain"
   ],
   "files": [
     "dist"
@@ -22,7 +23,8 @@
     "readline-sync": "^1.4.9"
   },
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "even-brain": "dist/bin/even-brain.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",
