@@ -27,6 +27,3 @@ const askQuestion = () => {
 };
 
 export default askQuestion;
-// export const checkAnswer = (rightAnswer, usersAnswer) => {
-//   console.log(`User answer is ${usersAnswer}  Good answer ${rightAnswer}`);
-// };
