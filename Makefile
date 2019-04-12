@@ -1,7 +1,7 @@
 install:
 	npm install htwr-brain-games
 start:
-	npx babel-node src/bin/brain-progression.js
+	npx babel-node src/bin/brain-calculator.js
 publish:
 	npm publish
 lint:
