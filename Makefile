@@ -1,7 +1,7 @@
 install:
-	sudo npm install -g htwr-brain-games
+	npm install htwr-brain-games
 start:
-	npx babel-node src/bin/even-brain.js
+	npx babel-node src/bin/calculator.js
 publish:
 	npm publish
 lint:
