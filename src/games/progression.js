@@ -1,4 +1,7 @@
 import getRandomInteger from '../utils';
+import gameFlow from '../game-engine';
+
+const description = 'What number is missing in the progression?';
 
 export const getQuestionAndAnswer = () => {
   const first = getRandomInteger(1, 5);
@@ -23,4 +26,8 @@ export const getQuestionAndAnswer = () => {
   return [question, rightAnswer];
 };
 
-export default getQuestionAndAnswer;
+const game = () => {
+  gameFlow(description, getQuestionAndAnswer);
+};
+
+export default game;

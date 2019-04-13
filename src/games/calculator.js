@@ -1,5 +1,7 @@
 import getRandomInteger from '../utils';
+import gameFlow from '../game-engine';
 
+const description = 'What is the result of the expression?';
 const operations = '+-*/';
 
 const calcRightAnswer = (firstNumber, secondNumber, operator) => {
@@ -26,4 +28,8 @@ const getQuestionAndAnswer = () => {
   return [question, rightAnswer];
 };
 
-export default getQuestionAndAnswer;
+const game = () => {
+  gameFlow(description, getQuestionAndAnswer);
+};
+
+export default game;

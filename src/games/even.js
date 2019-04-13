@@ -1,4 +1,7 @@
 import getRandomInteger from '../utils';
+import gameFlow from '../game-engine';
+
+const description = 'Answer "yes" if number even otherwise answer "no".';
 
 export const getQuestionAndAnswer = () => {
   const randomNum = getRandomInteger(1, 99);
@@ -10,4 +13,8 @@ export const getQuestionAndAnswer = () => {
   return [question, rightAnswer];
 };
 
-export default getQuestionAndAnswer;
+const game = () => {
+  gameFlow(description, getQuestionAndAnswer);
+};
+
+export default game;

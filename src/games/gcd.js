@@ -1,4 +1,7 @@
 import getRandomInteger from '../utils';
+import gameFlow from '../game-engine';
+
+const description = 'Find the greatest common divisor of given numbers.';
 
 const findNOD = (firstNumber, secondNumber) => {
   if (firstNumber === secondNumber) {
@@ -29,4 +32,8 @@ const getQuestionAndAnswer = () => {
   return [question, rightAnswer];
 };
 
-export default getQuestionAndAnswer;
+const game = () => {
+  gameFlow(description, getQuestionAndAnswer);
+};
+
+export default game;
