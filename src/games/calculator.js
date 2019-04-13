@@ -1,4 +1,4 @@
-import getRandomInteger from '../tools';
+import getRandomInteger from '../utils';
 
 const operations = '+-*/';
 

@@ -1,4 +1,4 @@
-import getRandomInteger from '../tools';
+import getRandomInteger from '../utils';
 
 const isPrime = (num) => {
   for (let i = 2; i <= Math.sqrt(num); i += 1) {
@@ -14,9 +14,9 @@ export const getQuestionAndAnswer = () => {
 
   const rightAnswer = (isPrime(randomNum)) ? 'yes' : 'no';
 
-  const textQuestion = `Question: ${randomNum}`;
+  const question = `Question: ${randomNum}`;
 
-  return [textQuestion, rightAnswer];
+  return [question, rightAnswer];
 };
 
 export default getQuestionAndAnswer;
