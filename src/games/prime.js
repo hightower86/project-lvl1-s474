@@ -25,8 +25,4 @@ export const getQuestionAndAnswer = () => {
   return [question, rightAnswer];
 };
 
-const game = () => {
-  gameFlow(description, getQuestionAndAnswer);
-};
-
-export default game;
+export default () => gameFlow(description, getQuestionAndAnswer);

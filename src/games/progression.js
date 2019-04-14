@@ -2,14 +2,13 @@ import getRandomInteger from '../utils';
 import gameFlow from '../game-engine';
 
 const description = 'What number is missing in the progression?';
+const progressionLength = 10;
 
 export const getQuestionAndAnswer = () => {
   const first = getRandomInteger(1, 5);
   const step = getRandomInteger(2, 5);
-  const progressionLength = 10;
   const emptyElementPosition = getRandomInteger(2, progressionLength);
   let progression = '';
-  const secretNumber = first + step * emptyElementPosition;
 
   for (let i = 0; i <= progressionLength; i += 1) {
     if (i === emptyElementPosition) {
@@ -20,13 +19,9 @@ export const getQuestionAndAnswer = () => {
   }
 
   const question = `Question: ${progression}`;
-  const rightAnswer = String(secretNumber);
+  const rightAnswer = String(first + step * emptyElementPosition);
 
   return [question, rightAnswer];
 };
 
-const game = () => {
-  gameFlow(description, getQuestionAndAnswer);
-};
-
-export default game;
+export default () => gameFlow(description, getQuestionAndAnswer);
