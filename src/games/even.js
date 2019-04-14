@@ -8,9 +8,7 @@ const getQuestionAndAnswer = () => {
 
   const rightAnswer = (randomNum % 2 === 0) ? 'yes' : 'no';
 
-  const question = randomNum;
-
-  return [question, rightAnswer];
+  return [randomNum, rightAnswer];
 };
 
 export default () => play(description, getQuestionAndAnswer);

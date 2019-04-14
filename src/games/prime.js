@@ -20,9 +20,7 @@ const getQuestionAndAnswer = () => {
 
   const rightAnswer = (isPrime(number)) ? 'yes' : 'no';
 
-  const question = number;
-
-  return [question, rightAnswer];
+  return [number, rightAnswer];
 };
 
 export default () => play(description, getQuestionAndAnswer);

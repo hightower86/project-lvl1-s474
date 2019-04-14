@@ -18,10 +18,9 @@ const getQuestionAndAnswer = () => {
     }
   }
 
-  const question = progression;
   const rightAnswer = String(first + step * emptyElementPosition);
 
-  return [question, rightAnswer];
+  return [progression, rightAnswer];
 };
 
 export default () => play(description, getQuestionAndAnswer);
