@@ -12,8 +12,9 @@ const calcRightAnswer = (firstNumber, secondNumber, operator) => {
       return firstNumber * secondNumber;
     case '/':
       return firstNumber / secondNumber;
-    default:
+    case '+':
       return firstNumber + secondNumber;
+    default:
   }
 };
 

@@ -8,7 +8,7 @@ const getQuestionAndAnswer = () => {
 
   const rightAnswer = (randomNum % 2 === 0) ? 'yes' : 'no';
 
-  const question = `${randomNum}`;
+  const question = randomNum;
 
   return [question, rightAnswer];
 };

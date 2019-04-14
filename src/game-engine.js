@@ -19,10 +19,10 @@ const play = (description, getQuestionAndAnswer) => {
       console.log(`${usersAnswer} is wrong answer ;(.`);
       console.log(`Correct answer was ${rightAnswer}`);
       console.log(`\nLet's try again, ${user}!`);
-      return 'game over';
+      return;
     }
   }
   console.log(`\nCongratulations, ${user}!`);
-  return 'game over';
 };
+
 export default play;

@@ -18,7 +18,7 @@ const getQuestionAndAnswer = () => {
     }
   }
 
-  const question = `${progression}`;
+  const question = progression;
   const rightAnswer = String(first + step * emptyElementPosition);
 
   return [question, rightAnswer];
