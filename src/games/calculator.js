@@ -5,16 +5,16 @@ const description = 'What is the result of the expression?';
 const operators = '+-*/';
 
 const calcRightAnswer = (firstNumber, secondNumber, operator) => {
-  if (operator === '+') {
-    return firstNumber + secondNumber;
+  switch (operator) {
+    case '-':
+      return firstNumber - secondNumber;
+    case '*':
+      return firstNumber * secondNumber;
+    case '/':
+      return firstNumber / secondNumber;
+    default:
+      return firstNumber + secondNumber;
   }
-  if (operator === '-') {
-    return firstNumber - secondNumber;
-  }
-  if (operator === '*') {
-    return firstNumber * secondNumber;
-  }
-  return firstNumber / secondNumber;
 };
 
 const getQuestionAndAnswer = () => {

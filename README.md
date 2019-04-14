@@ -1,7 +1,7 @@
 # project-lvl1-s474
 
 "This project includes four simple games for your brain.
-'brain-calculator', 'even-brain', 'brain-gcd', 'grain-prime' and 'brain-progression'.
+'brain-calculator', 'brain-even', 'brain-gcd', 'grain-prime' and 'brain-progression'.
 To set up games to your machine :
 1. Install NPM: https://www.npmjs.com/get-npm
 2. input command in your terminal:

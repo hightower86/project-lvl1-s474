@@ -20,7 +20,7 @@ const getQuestionAndAnswer = () => {
 
   const rightAnswer = (isPrime(number)) ? 'yes' : 'no';
 
-  const question = `${number}`;
+  const question = number;
 
   return [question, rightAnswer];
 };
