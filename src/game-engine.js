@@ -2,27 +2,25 @@ import readlineSync from 'readline-sync';
 
 const attempts = 3;
 
-const gameFlow = (description, getQuestionAndAnswer) => {
-  console.log(`Welcome to the Brain-Games! \n${description}\n`);
-  const user = readlineSync.question('What is your name?  ');
-  console.log(`Hello, ${user}`);
+const play = (description, getQuestionAndAnswer) => {
+  console.log('\nWelcome to the Brain-Games!');
+  console.log(description);
+  const user = readlineSync.question('\nMay I have your name?  ');
+  console.log(`Hello, ${user}\n`);
 
   for (let i = 1; i <= attempts; i += 1) {
     const [question, rightAnswer] = getQuestionAndAnswer();
-    const usersAnswer = readlineSync.question(`${question}\nYour answer: `);
+    console.log(`Question: ${question}`);
+    const usersAnswer = readlineSync.question('Your answer: ');
 
     if (usersAnswer === rightAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`${usersAnswer} is wrong answer ;(. 
-      \nCorrect answer was ${rightAnswer}.
-      \nLet's try again, ${user}!`);
-      break;
-    }
-
-    if (i === attempts) {
-      console.log(`Congratulations, ${user}!`);
+      console.log(`${usersAnswer} is wrong answer ;(.`);
+      console.log(`Correct answer was ${rightAnswer}`);
+      return console.log(`\nLet's try again, ${user}!`);
     }
   }
+  return console.log(`\nCongratulations, ${user}!`);
 };
-export default gameFlow;
+export default play;

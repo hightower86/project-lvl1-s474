@@ -1,5 +1,5 @@
 import getRandomInteger from '../utils';
-import gameFlow from '../game-engine';
+import play from '../game-engine';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -15,14 +15,14 @@ const isPrime = (num) => {
   return true;
 };
 
-export const getQuestionAndAnswer = () => {
+const getQuestionAndAnswer = () => {
   const number = getRandomInteger(1, 99);
 
   const rightAnswer = (isPrime(number)) ? 'yes' : 'no';
 
-  const question = `Question: ${number}`;
+  const question = `${number}`;
 
   return [question, rightAnswer];
 };
 
-export default () => gameFlow(description, getQuestionAndAnswer);
+export default () => play(description, getQuestionAndAnswer);

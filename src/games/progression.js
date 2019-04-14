@@ -1,10 +1,10 @@
 import getRandomInteger from '../utils';
-import gameFlow from '../game-engine';
+import play from '../game-engine';
 
 const description = 'What number is missing in the progression?';
 const progressionLength = 10;
 
-export const getQuestionAndAnswer = () => {
+const getQuestionAndAnswer = () => {
   const first = getRandomInteger(1, 5);
   const step = getRandomInteger(2, 5);
   const emptyElementPosition = getRandomInteger(2, progressionLength);
@@ -18,10 +18,10 @@ export const getQuestionAndAnswer = () => {
     }
   }
 
-  const question = `Question: ${progression}`;
+  const question = `${progression}`;
   const rightAnswer = String(first + step * emptyElementPosition);
 
   return [question, rightAnswer];
 };
 
-export default () => gameFlow(description, getQuestionAndAnswer);
+export default () => play(description, getQuestionAndAnswer);
