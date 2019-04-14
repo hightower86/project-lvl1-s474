@@ -5,17 +5,23 @@ const description = 'What is the result of the expression?';
 const operators = '+-*/';
 
 const calcRightAnswer = (firstNumber, secondNumber, operator) => {
+  let correctAnswer = 0;
   switch (operator) {
     case '-':
-      return firstNumber - secondNumber;
+      correctAnswer = firstNumber - secondNumber;
+      break;
     case '*':
-      return firstNumber * secondNumber;
+      correctAnswer = firstNumber * secondNumber;
+      break;
     case '/':
-      return firstNumber / secondNumber;
+      correctAnswer = firstNumber / secondNumber;
+      break;
     case '+':
-      return firstNumber + secondNumber;
+      correctAnswer = firstNumber + secondNumber;
+      break;
     default:
   }
+  return correctAnswer;
 };
 
 const getQuestionAndAnswer = () => {

@@ -1,6 +1,6 @@
 {
   "name": "htwr-brain-games",
-  "version": "1.8.7",
+  "version": "1.8.8",
   "description": "first project on the Hexlet",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
